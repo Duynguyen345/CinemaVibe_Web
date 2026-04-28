@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CinéVibe – Xem Phim Chiếu Rạp Không Giới Hạn</title>
+  <meta name="description" content="CinéVibe – Trải nghiệm phim chiếu rạp đỉnh cao ngay tại nhà. Gói xem phim tháng chỉ từ 49.000đ. Không quảng cáo, chất lượng 4K." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🎬</span>
+        Ciné<span>Vibe</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="services.html">Dịch vụ</a></li>
+        <li><a href="pricing.html">Bảng giá</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline">Đăng nhập</a>
+        <a href="pricing.html" class="btn btn-primary">Đăng ký ngay</a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="images/hero_bg.png" alt="Cinema background" class="hero-img" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge"><span class="badge badge-hot">🔥 Mới nhất 2025</span></div>
+    <h1 class="hero-title">
+      Rạp Chiếu Phim<br />
+      <span class="hero-title-highlight">Ngay Tại Nhà Bạn</span>
+    </h1>
+    <p class="hero-sub">
+      Hàng nghìn bộ phim chiếu rạp, phim bộ và phim dài tập. Không quảng cáo,
+      chất lượng Full HD – 4K. Chỉ từ <strong>49.000đ/tháng</strong>.
+    </p>
+    <div class="hero-actions">
+      <a href="pricing.html" class="btn btn-primary btn-lg">▶ Bắt đầu miễn phí 7 ngày</a>
+      <a href="services.html" class="btn btn-outline btn-lg">Khám phá phim</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><strong>5.000+</strong><span>Bộ phim</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><strong>4K</strong><span>Chất lượng</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"><strong>49K</strong><span>/ Tháng</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Cuộn xuống</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- ===== PHIM HOT TREND ===== -->
+<section class="section trending-section">
+  <div class="container">
+    <div class="section-center">
+      <p class="section-label">🔥 Đang Hot</p>
+      <h2 class="section-title">Phim Chiếu Rạp Xu Hướng</h2>
+      <p class="section-subtitle">Những bộ phim được yêu thích nhất tuần này – cập nhật liên tục mỗi ngày.</p>
+    </div>
+    <div class="movie-grid" id="movieGrid">
+      <div class="movie-card">
+        <div class="movie-poster">
+          <img src="images/poster1.png" alt="Bóng Đêm Vô Cực" />
+          <div class="movie-overlay">
+            <span class="badge badge-hot">🔥 Top 1</span>
+            <button class="play-btn" aria-label="Xem ngay">▶</button>
+          </div>
+          <div class="movie-rating">⭐ 9.2</div>
+        </div>
+        <div class="movie-info">
+          <h3>Bóng Đêm Vô Cực</h3>
+          <p>Hành động · Ly kỳ · 2025</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="movie-poster">
+          <img src="images/poster2.png" alt="Tình Yêu Giữa Núi" />
+          <div class="movie-overlay">
+            <span class="badge badge-new">✨ Mới</span>
+            <button class="play-btn" aria-label="Xem ngay">▶</button>
+          </div>
+          <div class="movie-rating">⭐ 8.7</div>
+        </div>
+        <div class="movie-info">
+          <h3>Tình Yêu Giữa Núi</h3>
+          <p>Tâm lý · Tình cảm · 2025</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="movie-poster">
+          <img src="images/poster3.png" alt="Vũ Trụ Vô Tận" />
+          <div class="movie-overlay">
+            <span class="badge badge-hot">🔥 Xu hướng</span>
+            <button class="play-btn" aria-label="Xem ngay">▶</button>
+          </div>
+          <div class="movie-rating">⭐ 9.5</div>
+        </div>
+        <div class="movie-info">
+          <h3>Vũ Trụ Vô Tận</h3>
+          <p>Khoa học viễn tưởng · 2025</p>
+        </div>
+      </div>
+      <div class="movie-card movie-card-extra">
+        <div class="movie-poster poster-placeholder">
+          <div class="poster-text">🎭</div>
+          <div class="movie-overlay">
+            <button class="play-btn" aria-label="Xem ngay">▶</button>
+          </div>
+          <div class="movie-rating">⭐ 8.4</div>
+        </div>
+        <div class="movie-info">
+          <h3>Ký Ức Phôi Phai</h3>
+          <p>Tâm lý · Gia đình · 2025</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-center" style="margin-top:40px">
+      <a href="services.html" class="btn btn-outline">Xem toàn bộ phim →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LỢI ÍCH ===== -->
+<section class="section benefits-section">
+  <div class="container">
+    <div class="benefits-wrapper">
+      <div class="benefits-text">
+        <p class="section-label">Tại Sao Chọn Chúng Tôi</p>
+        <h2 class="section-title" style="text-align:left">Trải Nghiệm Phim<br/>Đẳng Cấp Thật Sự</h2>
+        <p>CinéVibe mang rạp chiếu phim đến tận tầm tay bạn – với giá cả phải chăng nhất thị trường.</p>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <div class="benefit-icon">🚫</div>
+            <div>
+              <h4>Hoàn Toàn Không Quảng Cáo</h4>
+              <p>Thưởng thức phim liên tục, không bị ngắt quãng bởi bất kỳ quảng cáo nào.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🖥️</div>
+            <div>
+              <h4>Chất Lượng Full HD – 4K</h4>
+              <p>Hình ảnh sắc nét, âm thanh vòm sống động như đang ngồi trong rạp thực sự.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📱</div>
+            <div>
+              <h4>Xem Mọi Thiết Bị, Mọi Lúc</h4>
+              <p>TV, điện thoại, máy tính bảng – xem phim mọi lúc, mọi nơi bạn muốn.</p>
+            </div>
+          </div>
+        </div>
+        <a href="pricing.html" class="btn btn-primary" style="margin-top:24px">Đăng ký ngay</a>
+      </div>
+      <div class="benefits-visual">
+        <div class="screen-mockup">
+          <div class="screen-inner">
+            <img src="images/poster3.png" alt="Xem phim 4K" />
+            <div class="screen-ui">
+              <div class="player-bar">
+                <span class="player-title">Vũ Trụ Vô Tận</span>
+                <div class="player-controls">
+                  <span>⏮</span><span class="play-icon">▶</span><span>⏭</span>
+                </div>
+                <span class="player-time">01:24:08</span>
+              </div>
+            </div>
+          </div>
+          <div class="screen-glow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BẢNG GIÁ NHANH ===== -->
+<section class="section pricing-preview">
+  <div class="container">
+    <div class="section-center">
+      <p class="section-label">Giá Cả</p>
+      <h2 class="section-title">Chọn Gói Phù Hợp Với Bạn</h2>
+      <p class="section-subtitle">Giá minh bạch, không phí ẩn. Hủy bất cứ lúc nào.</p>
+    </div>
+    <div class="pricing-cards">
+      <div class="pricing-card glass-card">
+        <div class="pricing-header">
+          <p class="plan-name">Gói Tháng</p>
+          <div class="plan-price">
+            <span class="price-amount">49.000đ</span>
+            <span class="price-period">/tháng</span>
+          </div>
+        </div>
+        <ul class="plan-features">
+          <li>✅ Full HD – 1080p</li>
+          <li>✅ Không quảng cáo</li>
+          <li>✅ 2 màn hình đồng thời</li>
+          <li>✅ Phim mới cập nhật hàng ngày</li>
+          <li>❌ Tải về xem offline</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-outline" style="width:100%;justify-content:center">Đăng ký ngay</a>
+      </div>
+      <div class="pricing-card glass-card pricing-popular">
+        <div class="popular-badge">⭐ Tiết kiệm nhất</div>
+        <div class="pricing-header">
+          <p class="plan-name">Gói Năm</p>
+          <div class="plan-price">
+            <span class="price-amount">399.000đ</span>
+            <span class="price-period">/năm</span>
+          </div>
+          <p class="price-save">Tiết kiệm 40% so với gói tháng</p>
+        </div>
+        <ul class="plan-features">
+          <li>✅ 4K Ultra HD + Dolby</li>
+          <li>✅ Không quảng cáo</li>
+          <li>✅ 4 màn hình đồng thời</li>
+          <li>✅ Phim mới cập nhật hàng ngày</li>
+          <li>✅ Tải về xem offline</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-gold" style="width:100%;justify-content:center">Đăng ký ngay</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ĐÁNH GIÁ KHÁCH HÀNG ===== -->
+<section class="section reviews-section">
+  <div class="container">
+    <div class="section-center">
+      <p class="section-label">Khách Hàng Nói Gì</p>
+      <h2 class="section-title">Hàng Triệu Khán Giả Tin Tưởng</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card glass-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Giao diện đẹp, phim cập nhật siêu nhanh! Mình đăng ký gói năm và thấy rất đáng tiền. Không còn phải ra rạp nữa."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">👩</div>
+          <div>
+            <strong>Nguyễn Thị Lan</strong>
+            <p>Hà Nội · Gói Năm Premium</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card glass-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Chất lượng 4K cực đỉnh, tải về xem offline rất tiện khi đi xa. Giá cả hợp lý, xứng đáng 5 sao!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">👨</div>
+          <div>
+            <strong>Trần Văn Minh</strong>
+            <p>TP.HCM · Gói Năm Premium</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card glass-card">
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">"Xem được cả phim chiếu rạp lẫn phim bộ Hàn trên cùng một nền tảng. Gia đình mình 4 người đều thích!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">👩‍👧</div>
+          <div>
+            <strong>Phạm Thị Hoa</strong>
+            <p>Đà Nẵng · Gói Tháng</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-center">
+      <p class="section-label">Câu hỏi thường gặp</p>
+      <h2 class="section-title">Bạn Thắc Mắc Điều Gì?</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item glass-card" id="faq1">
+        <button class="faq-question" onclick="toggleFaq('faq1')">
+          CinéVibe có dùng thử miễn phí không?
+          <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-answer">
+          Có! Bạn được dùng thử <strong>7 ngày miễn phí</strong> khi đăng ký bất kỳ gói nào. Không cần thẻ tín dụng.
+        </div>
+      </div>
+      <div class="faq-item glass-card" id="faq2">
+        <button class="faq-question" onclick="toggleFaq('faq2')">
+          Tôi có thể xem trên bao nhiêu thiết bị?
+          <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-answer">
+          Gói Tháng cho phép <strong>2 màn hình đồng thời</strong>. Gói Năm cho phép <strong>4 màn hình cùng lúc</strong> – lý tưởng cho cả gia đình.
+        </div>
+      </div>
+      <div class="faq-item glass-card" id="faq3">
+        <button class="faq-question" onclick="toggleFaq('faq3')">
+          Tôi có thể hủy đăng ký bất cứ lúc nào không?
+          <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-answer">
+          Có, hoàn toàn. Hủy dễ dàng trong phần tài khoản, không mất phí ẩn nào. Bạn vẫn dùng được đến hết kỳ đã thanh toán.
+        </div>
+      </div>
+      <div class="faq-item glass-card" id="faq4">
+        <button class="faq-question" onclick="toggleFaq('faq4')">
+          Phim có được cập nhật thường xuyên không?
+          <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-answer">
+          Phim mới được bổ sung <strong>hàng ngày</strong>, bao gồm phim chiếu rạp mới nhất, phim bộ Hàn, Trung, Mỹ và phim Việt.
+        </div>
+      </div>
+      <div class="faq-item glass-card" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')">
+          Tôi có thể thanh toán bằng phương thức nào?
+          <span class="faq-arrow">›</span>
+        </button>
+        <div class="faq-answer">
+          Chúng tôi hỗ trợ: <strong>Ví MoMo, VNPay, chuyển khoản ngân hàng, thẻ Visa/Mastercard</strong> và thẻ ATM nội địa.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA CUỐI TRANG ===== -->
+<section class="cta-final">
+  <div class="cta-bg"></div>
+  <div class="container cta-content">
+    <h2>Bắt Đầu Hành Trình Điện Ảnh Của Bạn</h2>
+    <p>7 ngày miễn phí. Không cần thẻ tín dụng. Hủy bất cứ lúc nào.</p>
+    <div class="cta-actions">
+      <a href="pricing.html" class="btn btn-gold btn-lg">🎬 Dùng thử miễn phí ngay</a>
+      <a href="about.html" class="btn btn-outline btn-lg">Tìm hiểu thêm</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">🎬 Ciné<span>Vibe</span></a>
+        <p>Trải nghiệm điện ảnh đẳng cấp ngay tại nhà. Hàng nghìn bộ phim, giá cả phải chăng, không quảng cáo.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Youtube">📺</a>
+          <a href="#" aria-label="Tiktok">🎵</a>
+          <a href="#" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Dịch Vụ</h4>
+        <ul>
+          <li><a href="services.html">Phim chiếu rạp</a></li>
+          <li><a href="services.html">Phim bộ</a></li>
+          <li><a href="services.html">Phim dài tập</a></li>
+          <li><a href="pricing.html">Bảng giá</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Thông Tin</h4>
+        <ul>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ Trợ</h4>
+        <ul>
+          <li><a href="contact.html">Trung tâm trợ giúp</a></li>
+          <li><a href="#">Hướng dẫn sử dụng</a></li>
+          <li><a href="contact.html">Báo lỗi</a></li>
+          <li><a href="#">Cộng đồng</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CinéVibe. Tất cả quyền được bảo lưu.</p>
+      <p>Thiết kế với ❤️ cho khán giả Việt Nam</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

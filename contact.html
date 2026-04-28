@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ – CinéVibe</title>
+  <meta name="description" content="Liên hệ với CinéVibe để được hỗ trợ. Hotline, email và form liên hệ 24/7." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+<header class="header scrolled" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">🎬 Ciné<span>Vibe</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="services.html">Dịch vụ</a></li>
+        <li><a href="pricing.html">Bảng giá</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="contact.html" class="active">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline">Đăng nhập</a>
+        <a href="pricing.html" class="btn btn-primary">Đăng ký ngay</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container page-hero-content">
+    <p class="section-label">Chúng Tôi Luôn Lắng Nghe</p>
+    <h1>Liên Hệ<br/><span class="text-gradient">Với Chúng Tôi</span></h1>
+    <p class="page-hero-sub">Có thắc mắc? Cần hỗ trợ? Đội ngũ CinéVibe sẵn sàng giúp bạn 24/7.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem">Cách Liên Hệ Chúng Tôi</h2>
+        <p style="margin-bottom:32px">Chúng tôi cam kết phản hồi trong vòng <strong>2 giờ</strong> trong giờ làng việc.</p>
+
+        <div class="contact-card glass-card">
+          <div class="contact-card-icon">📞</div>
+          <div>
+            <h4>Hotline</h4>
+            <p>1800 6868 (Miễn phí)</p>
+            <span>Thứ 2 – CN: 8:00 – 22:00</span>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-card-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>hotro@cinevibe.vn</p>
+            <span>Phản hồi trong vòng 2 giờ</span>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-card-icon">💬</div>
+          <div>
+            <h4>Live Chat</h4>
+            <p>Chat trực tiếp trên website</p>
+            <span>Hỗ trợ 24/7 mọi lúc</span>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-card-icon">📘</div>
+          <div>
+            <h4>Facebook</h4>
+            <p>facebook.com/CineVibeVN</p>
+            <span>Nhắn tin fanpage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap glass-card">
+        <h3>Gửi Tin Nhắn</h3>
+        <p style="margin-bottom:24px">Điền thông tin bên dưới, chúng tôi sẽ liên hệ lại sớm nhất có thể.</p>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullname">Họ và tên *</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input type="tel" id="phone" name="phone" placeholder="0901 234 567" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="ban@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Chủ đề *</label>
+            <select id="subject" name="subject" required>
+              <option value="">-- Chọn chủ đề --</option>
+              <option value="billing">Thanh toán & Gói dịch vụ</option>
+              <option value="technical">Lỗi kỹ thuật</option>
+              <option value="content">Góp ý về nội dung phim</option>
+              <option value="cancel">Hủy đăng ký</option>
+              <option value="other">Khác</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Nội dung *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mô tả vấn đề của bạn tại đây..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center">
+            📨 Gửi tin nhắn
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✅ Cảm ơn bạn! Chúng tôi sẽ phản hồi trong vòng 2 giờ.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Quick FAQ -->
+<section class="section" style="background:rgba(255,255,255,0.015)">
+  <div class="container">
+    <div class="section-center">
+      <p class="section-label">Câu Hỏi Nhanh</p>
+      <h2 class="section-title">Hỗ Trợ Thường Gặp</h2>
+    </div>
+    <div class="quick-faq">
+      <div class="quick-faq-item glass-card">
+        <h4>🔑 Quên mật khẩu?</h4>
+        <p>Nhấn "Quên mật khẩu" ở trang đăng nhập, nhập email để nhận link đặt lại mật khẩu.</p>
+      </div>
+      <div class="quick-faq-item glass-card">
+        <h4>💳 Thanh toán thất bại?</h4>
+        <p>Kiểm tra số dư tài khoản hoặc thử phương thức thanh toán khác. Liên hệ hotline nếu vẫn lỗi.</p>
+      </div>
+      <div class="quick-faq-item glass-card">
+        <h4>📺 Phim bị giật/lag?</h4>
+        <p>Kiểm tra kết nối internet. Thử giảm chất lượng video xuống 1080p hoặc 720p trong cài đặt.</p>
+      </div>
+      <div class="quick-faq-item glass-card">
+        <h4>❌ Hủy đăng ký?</h4>
+        <p>Vào Tài khoản → Gói đăng ký → Hủy. Bạn vẫn xem được đến hết kỳ đã thanh toán.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">🎬 Ciné<span>Vibe</span></a>
+        <p>Trải nghiệm điện ảnh đẳng cấp ngay tại nhà.</p>
+        <div class="footer-social"><a href="#">📘</a><a href="#">📺</a><a href="#">🎵</a><a href="#">📷</a></div>
+      </div>
+      <div class="footer-col"><h4>Dịch Vụ</h4><ul>
+        <li><a href="services.html">Phim chiếu rạp</a></li>
+        <li><a href="pricing.html">Bảng giá</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Thông Tin</h4><ul>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Hỗ Trợ</h4><ul>
+        <li><a href="#">Hotline: 1800 6868</a></li>
+        <li><a href="#">hotro@cinevibe.vn</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CinéVibe. Tất cả quyền được bảo lưu.</p>
+      <p>Thiết kế với ❤️ cho khán giả Việt Nam</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '⏳ Đang gửi...';
+  btn.disabled = true;
+  setTimeout(() => {
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }, 1200);
+}
+</script>
+</body>
+</html>
